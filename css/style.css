@@ -1,0 +1,156 @@
+:root{
+    --background-color: #141519;
+    --background-card: #1F2630;
+    --inactive-button: #262F38;
+    --active-numbered-button: #7C8799;
+    --hovered-numbered-button: #F97716;
+    --hovered-submit-button: #FFFFFF;
+
+}
+
+*{
+    font-family: 'Overpass', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    color: white;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container{
+    background-color: var(--background-card);
+    padding: 35px;
+    border-radius: 25px;
+    width: 420px;
+    margin: 20px auto;
+    min-height: 417px;
+    
+
+}
+
+/* .main_view{
+    visibility: hidden;
+} */
+
+.container .cont_logo{
+    background-color: var(--inactive-button);
+    padding: 15px;
+    border-radius: 30px;
+  
+}
+
+.container h1{
+    margin-top: 30px;
+
+}
+
+.container p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--active-numbered-button);
+    
+
+}
+
+.rating_btns{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.rating_btns button{
+
+    margin-top: 25px;
+    background-color: var(--inactive-button);
+    color: var(--active-numbered-button);
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.rating_btns button.active{
+    background-color: var(--active-numbered-button);
+    color: var(--hovered-submit-button);
+    transition: all ease-in .3s;
+}
+
+.rating_btns button:hover{
+    background-color: var(--hovered-numbered-button);
+    color: var(--hovered-submit-button);
+    transition: all ease-in .3s;
+}
+
+.submit_btn{
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: 0;
+    color: var(--hovered-submit-button);
+    background-color: var(--hovered-numbered-button);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.submit_btn:hover{
+    color: var(--hovered-numbered-button);
+    background-color: var(--hovered-submit-button);
+    transition: all ease-in .3s;
+  
+}
+
+#thankYouMessage .ty_results{
+    color: var(--hovered-numbered-button);
+    background-color: var(--inactive-button);
+    width: 80%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    text-align: center;
+
+}
+
+#thankYouMessage{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px auto;
+   text-align: center;
+
+}
+
+
+@media screen and (max-width:480px) {
+    .container{
+        background-color: var(--background-card);
+        padding: 35px;
+        border-radius: 25px;
+        width: 340px;
+        margin: 20px auto;
+        min-height: 360px;
+        
+    
+    }
+    
+}
+
